@@ -311,6 +311,19 @@ body {
   gap: 14px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
+
+@media (max-width: 430px) {
+  .hero-shell .grid > *:first-child { padding-right: 8px; }
+}
+@media (max-width: 430px) {
+  .hero-shell { --orbit: min(46svh, 500px); }   
+}
+@media (max-width: 380px) {
+  .hero-shell { --orbit: min(44svh, 470px); }
+}
+@media (max-width: 430px) {
+  .dotted-arc { opacity: 0.32; }
+}
 @media (min-width: 480px) {
   .ingredient-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
